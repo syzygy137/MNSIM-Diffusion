@@ -250,3 +250,5 @@ import glob
 
 sample_images = sorted(glob.glob(f"{config.output_dir}/samples/*.png"))
 Image.open(sample_images[-1])
+
+torch.save(model.state_dict(), "butterfly_weights.pth")
